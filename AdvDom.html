@@ -1,0 +1,18 @@
+<html>
+    <body>
+        <input type="text" placeholder="Enter todo item"></input>
+        <button onClick="addTodo()">Click Me!</button>
+        <script>
+            function addTodo() {
+                const value = document.querySelector('input').value;
+                const createElement = document.createElement('div');
+                createElement.innerHTML = "<div>" +value+"</div><button>Delete</button>";
+                
+
+                 
+                document.querySelector("body").appendChild(createElement);
+            }
+        </script>
+    </body>
+</html>
+    
